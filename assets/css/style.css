@@ -1,0 +1,203 @@
+html {
+    height: 100%;
+    box-sizing: border-box; 
+}
+
+/* Apply to all elements */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 70px;
+    min-height: 100%;
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1, .brand {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #757575;
+}
+
+p {
+    margin: 20px 0;
+    line-height: 140%;
+}
+
+/* below applies to the Navigation section */
+
+.nav-wrapper {
+    box-shadow: 0px 8px 7px 0px #aaa;
+    background-color: #ffffff;
+    height: 70px;
+}
+
+.nav-normal {
+	overflow: hidden;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.brand {
+	float: left;
+	line-height: 75px;
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #4ABDAC;
+    color: #ffffff;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 8px 7px 0px #aaa;
+    position: fixed;
+    z-index: 1;
+}
+
+.brand p {
+	margin: 0 20px;
+    padding: 0;
+}
+
+.nav-normal ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-normal a {
+	float: right;
+	text-decoration: none;
+	padding: 0px 16px;
+    line-height: 75.5px;
+    color: #757575;
+    font-size: 14pt;
+}
+
+.nav-normal a:hover {
+    background-color: #4ABDAC;
+    color: #ffffff;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 8px 7px 0px #aaa;
+}
+
+.nav-normal a#active {
+    color: #ffffff;
+}
+
+/* below applies to Content settings */
+
+.content-wrapper {
+	max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 20px 40px 20px;
+    margin-top: 25px;
+    border: .5px solid #666;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.content-wrapper hr {
+    background-color: #4ABDAC;
+    height: 2px;
+}
+
+/* below applies to "Portfolio" page */
+
+.row::after {
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.project-wrapper {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 15px auto 0 auto;
+}
+
+.project-wrapper p {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    background: #4ABDAC;
+    transform: translate(-50%, -50%);
+    padding: 15px 0;
+    font-size: 16pt;
+    color: rgb(255, 255, 255);
+}
+
+/* below applies to form on "Contact" page */
+
+form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#messageEntry {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: #ddd;
+    padding: 14px 20px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* below applies to profile image "About" page */
+
+.profile-image {
+    max-width: 15rem;
+    border: .5px solid #333;
+    height: auto;
+    padding: 0;
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+/* below applies to footer */
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 8px solid #4ABDAC;
+    background-color: #757575;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 13px;
+}
